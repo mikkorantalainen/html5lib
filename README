@@ -2,15 +2,16 @@ Git clone of https://code.google.com/p/html5lib/
 
 Warning: this clone is not automatically updated.
 
-How to update (requires hg-git plugin for mercurial)
+The master branch is created as follows:
 
-hg clone https://code.google.com/p/html5lib/
-hg bookmark -f master
-hg push git+ssh://git@github.com:mikkorantalainen/html5lib.git
+git clone git://repo.or.cz/fast-export.git
+hg clone https://code.google.com/p/html5lib/ html5lib.hg
+git init html5lib.git
+cd html5lib.git
+../fast-export/hg-fast-export.sh -r ../html5lib.hg
+git checkout HEAD
 
-or if you already have hg repo
-
-hg pull
-hg bookmark -f master
-hg push git+ssh://git@github.com:mikkorantalainen/html5lib.git
+Please, do NOT commit file called 'README' into the master branch only to
+get github to display its contents automatically. The intent is to keep
+master branch equal to original mercurial version.
 
