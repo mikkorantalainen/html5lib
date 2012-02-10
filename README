@@ -1,0 +1,16 @@
+Git clone of https://code.google.com/p/html5lib/
+
+Warning: this clone is not automatically updated.
+
+How to update (requires hg-git plugin for mercurial)
+
+hg clone https://code.google.com/p/html5lib/
+hg bookmark -f master
+hg push git+ssh://git@github.com:mikkorantalainen/html5lib.git
+
+or if you already have hg repo
+
+hg pull
+hg bookmark -f master
+hg push git+ssh://git@github.com:mikkorantalainen/html5lib.git
+
