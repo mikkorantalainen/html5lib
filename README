@@ -2,10 +2,18 @@ Git clone of https://code.google.com/p/html5lib/
 
 Warning: this clone is not automatically updated.
 
-The master branch is created as follows:
+The repository is created as follows:
 
-1. install git-hg from https://github.com/offbytwo/git-hg
+1. [install git-hg from https://github.com/offbytwo/git-hg]
 2. git hg clone https://code.google.com/p/html5lib
+3. [set origin to repository in github]
+4. git push --mirror
+5. [create branch README with this description]
+
+Updating all the branches:
+
+1. git hg pull
+2. git push --mirror
 
 Please, do NOT commit file called 'README' into the master branch only to
 get github to display its contents automatically. The intent is to keep
