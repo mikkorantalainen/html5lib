@@ -4,12 +4,8 @@ Warning: this clone is not automatically updated.
 
 The master branch is created as follows:
 
-git clone git://repo.or.cz/fast-export.git
-hg clone https://code.google.com/p/html5lib/ html5lib.hg
-git init html5lib.git
-cd html5lib.git
-../fast-export/hg-fast-export.sh -r ../html5lib.hg
-git checkout HEAD
+1. install git-hg from https://github.com/offbytwo/git-hg
+2. git hg clone https://code.google.com/p/html5lib
 
 Please, do NOT commit file called 'README' into the master branch only to
 get github to display its contents automatically. The intent is to keep
